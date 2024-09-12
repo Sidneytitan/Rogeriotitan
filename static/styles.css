@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    padding-top: 60px;
+    color: #333;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #FFFFFF, #EF4824);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.open-sidebar-btn {
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #1e3a8a; /* Azul mais claro */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.open-sidebar-btn:hover {
+    background-color: #16368f; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+/* Controles de posição do botão */
+.btn-position {
+    position: absolute;
+}
+
+.btn-position-left {
+    left: 5%; /* Ajuste conforme necessário */
+}
+
+.btn-position-right {
+    right: 5%; /* Ajuste conforme necessário */
+}
+
+.btn-position-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar-modal {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #F3F4F6; /* Cor do fundo do sidebar */
+    color: #333;
+    padding: 20px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+    transition: left 0.4s ease;
+    z-index: 1050;
+    border-right: 2px solid #e0e0e0; /* Cor da borda do sidebar */
+}
+
+.sidebar-modal.active {
+    left: 0;
+}
+
+.sidebar-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-modal-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+.sidebar-modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-modal ul li {
+    margin: 20px 0;
+}
+
+.sidebar-modal ul li a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-modal ul li a:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+    transform: translateX(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-modal ul li a i {
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+.close-sidebar {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+    color: #000;
+}
